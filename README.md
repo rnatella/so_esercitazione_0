@@ -34,3 +34,4 @@ $ git push
 
 Nella pagina web del repository, cliccando su `Pull requests`, sarà possibile ricevere dal docente eventuali correzioni o suggerimenti riguardo lo svolgimento consegnato, e inserire dei commenti per il docente.
 
+![Points badge](../../blob/badges/.github/badges/points.svg)
