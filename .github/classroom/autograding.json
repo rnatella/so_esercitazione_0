@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Calcolo vettore condiviso, con mutua esclusione",
+      "setup": "pip3 -qqq install semgrep && sudo apt -qq install expect 2>/dev/null >/dev/null",
+      "run": "/bin/bash .test/hello.sh",
+      "input": "",
+      "output": "pass",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
