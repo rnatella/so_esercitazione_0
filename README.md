@@ -44,7 +44,7 @@ In questo esercizio, andrà salvato il solo file `hello.c`. In caso di più file
 ```
 $ git add hello.c
 
-$ git commit -m "La mia soluzione"
+$ git commit -m "Esercizio Hello World - Cognome Nome"
 
 $ git push
 ```
