@@ -2,7 +2,7 @@
 
 ## Configurazione di git ##
 
-Prima di iniziare, configurare git con il vostro nome ed email.
+Prima di iniziare, configurare il vostro nome ed email su git sul vostro computer.
 Si apra un terminale, e si inseriscano questi comandi, modificando con il proprio indirizzo email e nome:
 
 ```
@@ -12,17 +12,20 @@ $ git config --global user.name "Nome Cognome"
 
 Il vostro nome ed email appariranno nella cronologia (`log`) delle modifiche (`versioni`) del progetto.
 
+
+
+
 ## Svolgimento dell'esercizio ##
 
 Per iniziare l'esercizio, occorre creare una copia locale del progetto sul proprio computer (`repository locale`).
 Dal terminale, utilizzare il comando **`git clone`** come segue.
 
-Si sostituisca **`NOMEUTENTE`** con il proprio username GitHub.
+**`<reponame>`** nello URL indica il nome del progetto.
 
 ```
-$ git clone https://github.com/so-unina-sangiovanni/esercitazione_0-NOMEUTENTE.git
+$ git clone https://github.com/so-unina-sangiovanni/<reponame>
 
-$ cd esercitazione_0-NOMEUTENTE
+$ cd <reponame>
 
 $ ... utilizzare make per compilare, e avviare da qui il programma ....
 ```
@@ -30,6 +33,8 @@ $ ... utilizzare make per compilare, e avviare da qui il programma ....
 L'esercizio richiede di modificare il programma `hello` per fargli stampare il messaggio *"Hello World!"*. 
 
 All'interno del codice fornito negli esercizi, sono inclusi dei commenti denominati **`TBD`** ("to be done") con indicazioni sulle parti da completare.
+
+
 
 ## Consegna dell'esercizio ##
 

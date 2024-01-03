@@ -17,7 +17,7 @@ jobs:
     if: ${{ !contains(github.event.head_commit.author.name, '[bot]') }}
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       # reset feedback.md contents
       - run: echo "" > $GRADING_FEEDBACK_TEMPFILE_PATH
@@ -57,7 +57,7 @@ jobs:
     if: ${{ always() && github.ref == 'refs/heads/main' && !contains(github.event.head_commit.author.name, '[bot]') }}
     needs: build
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - name: prepare comment and substitute tokens
         id: prep
@@ -97,11 +97,11 @@ jobs:
   build-badges:
     name: Build Points Badge
     runs-on: ubuntu-22.04
-    if: always()
+    if: ${{ always() && github.ref == 'refs/heads/main' && !contains(github.event.head_commit.author.name, '[bot]') }}
     needs: build
     steps:
       # need to checkout whole repo
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
